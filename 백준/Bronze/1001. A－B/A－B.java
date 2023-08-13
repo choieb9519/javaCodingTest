@@ -1,0 +1,20 @@
+import java.io.*;
+
+public class Main{
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        
+        String[] str = br.readLine().split(" ");
+        
+        int a = Integer.parseInt(str[0]);
+        int b = Integer.parseInt(str[1]);
+        int c = a-b;
+        bw.write(String.valueOf(c));
+        //bw.write(Integer.toString(c));
+        
+        bw.flush();
+        br.close();
+        bw.close();
+    }   
+}
