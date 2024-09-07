@@ -1,6 +1,5 @@
 SELECT ANIMAL_ID, NAME
 from ANIMAL_INS
-where NAME like ('%el%')
-and ANIMAL_TYPE = 'Dog'
+where ANIMAL_TYPE = 'Dog'
+AND upper(NAME) like '%EL%' 
 order by NAME
-;
